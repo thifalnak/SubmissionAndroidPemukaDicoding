@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Golden Age Hero</string>
+    <string name="textview">TextView</string>
+    <string name="night_mode_normal">Night Mode/Normal</string>
+    <string name="about">About</string>
+    <string name="namaku">Thifal Nurrifqi Ariel Kurniawan</string>
+    <string name="kirim_saran">Kirim Email</string>
+    <string name="emailku">thifal.nurrifqiak@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="jobku">Mahasiswa</string>
+    <string name="job">Pekerjaan</string>
+    <string name="choose_theme_text">Pilih Tema</string>
+</resources>

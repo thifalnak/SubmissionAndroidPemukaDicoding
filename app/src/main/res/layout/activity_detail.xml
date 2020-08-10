@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/flimage">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                android:id="@+id/imageondetail"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Nama Sahabat"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:background="#6D706F"
+                android:textColor="#ffffff"
+                android:padding="8dp"
+                android:layout_gravity="bottom"
+                android:id="@+id/nameondetail" />
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cv_kisah"
+            android:layout_below="@id/flimage">
+            <TextView
+                android:padding="8dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Ini nantinya Kisah"
+                android:id="@+id/kisah"
+                android:justificationMode="inter_word"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sumber Artikel"
+            android:layout_below="@id/cv_kisah"
+            android:id="@+id/btnsource"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_heroes1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnsource"
+            tools:listitem="@layout/item_nextoptions" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
